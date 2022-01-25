@@ -1,23 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 .wrapper    {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 453px;
-    width: 100%;
+    border-collapse: collapse;
     
-    
-    &__square {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 0 0 150px;
+    & td {
+        width: 150px;
         height: 150px;
+        border: 1px solid red;
+       
         
-
-        outline: 1px solid red;
-
         &:hover {
-            outline: 1px solid blue;
+            border: 1px solid blue; 
         }
     }
 }
